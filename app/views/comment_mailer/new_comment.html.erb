@@ -1,0 +1,14 @@
+<p>
+
+Este es un email de prueba de <%= link_to @item.name, %>:
+</p>
+
+<blockquote>
+<em> <%= @comment.body %> </em>
+</blockquote>
+
+<p>
+Para responder a este correo, visita la pagina
+
+<%= link_to "item page", @item %>.
+</p>
