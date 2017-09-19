@@ -14,13 +14,19 @@
  *= require_self
  */
 
+
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+
+
+// Typography styles
 h1, h2, h3{
     font-family: 'Slabo 27px', serif;
 }
 
+
+// Background gradient
 .navbar, .home-callout {
     
     background: #667db6;  /* fallback for old browsers */
@@ -28,10 +34,13 @@ h1, h2, h3{
     background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
+// Style of nav bar
 .navbar{
     border: none;
 }
 
+// home page styles
 .home-callout {
   color: white;
   margin-top: -20px;
@@ -39,15 +48,18 @@ h1, h2, h3{
   padding-bottom: 100px;
 }
 
-.navbar-default .navbar-brand {
-  color: white;
-}
-
+.navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   color: white;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 }
-
-.navbar-default .navbar-brand:hover {
+// Home Page Styles
+.home-callout {
   color: white;
-  opacity: 0.75;
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
