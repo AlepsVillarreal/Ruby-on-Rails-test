@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
   get 'about', to: 'pages#about'
-  resources :contacts
-  get 'contactanos', to: 'contacts#new'
+  resources :contacts, only: :create
+  get 'contact-us', to: 'contacts#new', as: 'new_contact' #Parametros es get NombreQueQuiero, to: Nombre#tipo, as new_contact_path, que esta en el layout de application.html.erb
 end
 
 
