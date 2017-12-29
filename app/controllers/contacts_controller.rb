@@ -3,10 +3,15 @@ class ContactsController < ApplicationController
       @contact = Contact.new
     end
     
-    
     def create
       @contact = Contact.new(contact_params)
       if @contact.save
+        name = params[:contact][:name]
+        email = params[:contact][:email]
+        body = params[:contact][:comments]#asociar las variables de los parametros de la forma a las variables a usar internamente
+        ContactMailer.contact_email(name, email, body).deliver #Instanciar un objeto de la clase contact_email con el fin de mandar correo
+        
+        
          flash[:success] = "Message sent."
          redirect_to new_contact_path
       else
