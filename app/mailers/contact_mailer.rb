@@ -1,11 +1,11 @@
 class ContactMailer < ActionMailer::Base
  default to: 'posdata.5@hotmail.com'
  
- def contact_email(name, mail, body)
+ def contact_email(name, email, body)
      @name = name
-     @mail = mail
+     @email = email
      @body = body
  
     mail(from: email, subject: 'Contact Form Message')
  end
-end
+end  
