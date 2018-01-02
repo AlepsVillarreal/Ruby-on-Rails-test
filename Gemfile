@@ -23,6 +23,9 @@ gem 'jbuilder', '2.5.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '3.1.7'
 
+#Validate email format
+gem 'validates_email_format_of'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -57,6 +60,7 @@ end
 group :production do
   # Use the PostgreSQL gem for Heroku production servers
   gem 'pg', '0.18.4'
+  
 end
 
 
