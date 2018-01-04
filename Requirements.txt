@@ -1,0 +1,10 @@
+Membresias
+* Usuario deberia de ver el enlace de basic plan en home
+* Usuario deberia ver enlace para Pro plan en home
+* Vincular el plan básico con un registro normal
+* Vincular plan pro a un formulario customizado para planes Pro
+
+    Básica:
+    Pro:
+    
+    
