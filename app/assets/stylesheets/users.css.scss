@@ -31,3 +31,15 @@
     background-color: #5bc0de;
     border-color: #46b8da;
 }
+
+//User index page styles
+.user-index-avatar{
+    width:128px;
+    height:128px;
+    border-radius: 50%;
+}
+
+//Para que cycleen los colores de la lista en el User index page styles
+.well.white-bg{
+    background-color: white;
+}

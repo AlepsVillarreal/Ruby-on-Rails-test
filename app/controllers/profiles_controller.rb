@@ -11,7 +11,7 @@ class ProfilesController < ApplicationController
     # POST to /users/:user_id/profile
     def create
       # Ensure that we have the user who is filling out form
-      @user = User.find( params[:user_id] )
+      @user = User.find(params[:user_id] )
       # Create profile linked to this specific user
       @profile = @user.build_profile( profile_params )
       if @profile.save
@@ -24,7 +24,7 @@ class ProfilesController < ApplicationController
     
     #GET to /users/:users_id/profile/edit
     def edit
-      @user = User.find(id: params[:user_id] )
+      @user = User.find(params[:user_id] )
       @profile = @user.profile
     end
     
