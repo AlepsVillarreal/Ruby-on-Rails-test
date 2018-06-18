@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 20180115180405) do
 
   create_table "plans", force: :cascade do |t|
     t.string   "name"
-    t.decimal  "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -57,8 +56,6 @@ ActiveRecord::Schema.define(version: 20180115180405) do
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.integer  "plan_id"
-    t.string   "stripe_customer_token"
-    t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
