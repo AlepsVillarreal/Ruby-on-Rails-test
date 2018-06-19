@@ -1,6 +1,5 @@
 <div class="home-callout text-center container-fluid">
-  <h1>Welcome to DevMatch</h1>
-  <h3>A membership site where entrepreneurs can meet developers.</h3>
+  <h1>Movimiento scout</h1>
 </div>
 <div class="container home-signup-links">
   <div class="row">
@@ -31,12 +30,16 @@
       
       
     <% else %>
-      <div class="col-md-6">
+    
+    <!--Credenciales para entrar>:
+        user: example@hotmail.com
+        pass: 123123123
+    -->
+      <div class="col-md-12">
         <div class="well">
-          <h2 class="text-center">Basic Membership</h2>
-          <h4>Sign up for free and get basic access to the community.</h4>
+          <h2 class="text-center">Inicia sesión para usar el software</h2>
           <br/>
-          <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id) , class: 'btn btn-primary btn-lg btn-block' %>
+          <%= link_to "Inicia sesión", new_user_session_path, class: 'btn btn-primary btn-lg btn-block' %>
         </div>
       </div>
     <% end %>

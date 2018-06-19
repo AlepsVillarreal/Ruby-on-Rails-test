@@ -3,9 +3,7 @@
 <head>
   <title>Workspace</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag "https://js.stripe.com/v2/", type: 'text/javascript' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY %>
 </head>
   <body>
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
@@ -19,7 +17,7 @@
           </button>
           <%= link_to root_path, class: "navbar-brand" do %>
             <i class="fa fa-group"></i>
-            DevMatch
+            Movimiento scout mexicano
             <% end %>
         </div>
         
