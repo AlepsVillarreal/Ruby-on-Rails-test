@@ -1,58 +1,63 @@
-<div class="carousel-inner">
-  <!--CAROUSEL CODE GOES HERE-->
-  <div id="myGallery" class="carousel slide" data-ride="carousel" data-interval="3000">
-    <div class="carousel-inner">
-  
-      <div class="item active">
-        <%= image_tag("sample6.jpg",
-                      alt: "Image description here",
-                      class: "img-responsive") %>
-          <div class="carousel-caption">
-            <h3>Caption 1 here</h3>
-            <p>Caption 1 description here</p>
-          </div>
-      </div>
-      <div class="item">
-        <%= image_tag("sample2.jpeg",
-                      alt: "Image description here",
-                      class: "img-respponsive") %>
-          <div class="carousel-caption">
-            <h3>Caption 2 here</h3>
-              <p>Caption 2 description here</p>
-          </div>
-      </div>
-      <div class="item">
-        <%= image_tag("sample3.jpeg",
-                      alt: "Image description here",
-                      class: "img-respponsive") %>
-          <div class="carousel-caption">
-            <h3>Caption 3 here</h3>
-              <p>Caption 3 description here</p>
-          </div>
-      </div>
-      <div class="item">
-        <%= image_tag("sample4.jpg",
-                      alt: "Image description here",
-                      class: "img-respponsive") %>
-          <div class="carousel-caption">
-            <h3>Caption 4 here</h3>
-              <p>Caption 4 description here</p>
-          </div>
-      </div>
-  
-    </div><!--end carousel-inner-->
-      <!-- Previous and Next buttons-->
-      <a class="left carousel-control" href="#myGallery" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control"
-        href="#myGallery" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>
-    </div><!-- myGallery-->
+<div class="home-callout text-center container-fluid">
+  <h1>MASODEX</h1>
+  <h3>Manufactura sobre demanda</h3>
 </div>
+
+<div class="text-center container-fluid">
+  <div class="row">
+    <div class="col-md-3 col-sm-3 col-xs-6">
+      <%= link_to image_tag "sample1.jpg", alt: "placeholder image 1", class: "img-responsive" %>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-6">
+      <%= link_to image_tag "sample2.jpg", alt: "placeholder image 1", class: "img-responsive" %>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-6">
+      <%= link_to image_tag "sample5.jpg", alt: "placeholder image 1", class: "img-responsive" %>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-6">
+      <%= link_to image_tag "sample6.jpg", alt: "placeholder image 1", class: "img-responsive" %>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <div class="pull-left"><h4>Your picture gallery</h4></div>
+              <button type="button" class="close" data-dismiss="modal" title="Close">
+                <span class="glyphicon glyphicon-remove"></span>
+              </button>
+          </div>
+    <div class="modal-body">
+
+
   
+        </div><!--end carousel-inner-->
+      <!--Begin Previous and Next buttons-->
+        <a class="left carousel-control" href="#myGallery" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control"
+          href="#myGallery" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div><!--end carousel-->
+    
+
+    </div><!--end modal-body-->
+        <div class="modal-footer">
+        <div class="pull-left">
+        </div>
+          <button class="btn-sm close" type="button" data-dismiss="modal">Close</button>
+      </div><!--end modal-footer-->
+    </div><!--end modal-content-->
+  </div><!--end modal-dialoge-->
+</div><!--end myModal-->
+
+
 <div class="container home-signup-links">
   <div class="row">
     <% if user_signed_in? %>
+      
       <div class="col-md-6">
         <div class="well">
           <h2 class="text-center"> Your profile</h2> 
@@ -96,5 +101,13 @@
         </div>
       </div>
     <% end %>
+  </div>
+</div>
+ruby 
+<div class="container-fluid subeDisenio">
+  <div class="row text-center">
+      <div class="col-md-12">
+        <h1>Empieza a fabricar</h1>
+      </div>
   </div>
 </div>

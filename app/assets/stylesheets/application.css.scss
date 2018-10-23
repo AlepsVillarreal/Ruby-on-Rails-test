@@ -27,6 +27,12 @@ h1, h2, h3{
     font-family: 'Slabo 27px', serif;
 }
 
+.carousel-inner > .item > img{
+margin:auto;
+width:50%;
+max-height: 400px;
+}
+
 
 // Background gradient
 .navbar, .home-callout {
