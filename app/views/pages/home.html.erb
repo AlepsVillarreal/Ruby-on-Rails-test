@@ -1,11 +1,9 @@
 <div class="home-callout text-center container-fluid">
-  <h1>Welcome to DevMatch</h1>
-  <h3>A membership site where entrepreneurs can meet developers.</h3>
+  <h1>MASODEX</h1>
+  <h3>Manufactura sobre demanda</h3>
 </div>
 <div class="container home-signup-links">
   <div class="row">
-    
-    
     <% if user_signed_in? %>
       
       <div class="col-md-6">
@@ -29,23 +27,35 @@
         </div>
       </div>
     <% else %>
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="well">
-          <h2 class="text-center">Basic Membership</h2>
-          <h4>Sign up for free and get basic access to the community.</h4>
+          <h2 class="text-center">Mandanos tu concepto</h2>
+          <h4 class="text-center">Formatos a, b, c</h4>
           <br/>
-          <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id) , class: 'btn btn-primary btn-lg btn-block' %>
+          <%# <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id) , class: 'btn btn-primary btn-lg btn-block' %> 
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="well">
-          <h2 class="text-center">Pro Membership</h2>
-          <h4>Sign up for the pro account for $10/month and get access to the community and contact information!</h4>
-          <%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
+          <h2 class="text-center">Cotizamos tu pedido</h2>
+          <h4 class="text-center">Un día de tiempo estimado de espera</h4>
+         <%# <%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %> 
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="well">
+          <h2 class="text-center">Enviados a tu domicilio</h2>
+      <%# <%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %> 
         </div>
       </div>
     <% end %>
   </div>
-                                                                  
-  
+</div>
+
+<div class="container-fluid subeDisenio">
+  <div class="row text-center">
+      <div class="col-md-12">
+        <h1>Empieza a fabricar</h1>
+      </div>
+  </div>
 </div>
